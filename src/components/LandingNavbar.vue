@@ -1,22 +1,21 @@
 <template>
-    <nav>
-        <ul>
-            <router-link>
-                <li>Home</li>
-            </router-link>
-            <router-link>
-                <li>Services</li>
-            </router-link>
-            <router-link>
-                <li>About</li>
-            </router-link>
-            <router-link>
-                <li>Industries serviced</li>
-            </router-link>
-            <router-link>
-                <li>Contact</li>
-            </router-link>
-        </ul>
+    <nav id="nav">
+        <div>
+            <img src="" alt="Company Logo">
+        </div>
+        <div>
+            <ul class="list-holder">
+                <li class="list-item">Home</li>
+                |
+                <li class="list-item">Services</li>
+                |
+                <li class="list-item">About</li>
+                |
+                <li class="list-item">Industries serviced</li>
+                |
+                <li class="list-item">Contact</li>
+            </ul>
+        </div>
     </nav>
 </template>
 
@@ -27,7 +26,23 @@ export default {
 </script>
 
 <style scoped>
-li {
+#nav {
+    border: 1px solid black;
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+}
+
+.list-holder {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.list-item {
     list-style-type: none;
+    padding: 5px;
 }
 </style>
