@@ -3,6 +3,7 @@
         <div class="landing-holder">
             <h1>Welcome To...</h1>
             <img src="https://picsum.photos/200" alt="Sabindi Logo" class="sabindi-home" />
+            <!-- Image will have an animation fading in -->
         </div>
     </section>
 </template>
