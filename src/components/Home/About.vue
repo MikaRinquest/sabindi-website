@@ -1,5 +1,5 @@
 <template>
-    <section id="about">
+    <base-layout id="about" section-title="About Sabindi">
         <div class="about1">
             <div class="img1">
                 <img src="" alt="Picture">
@@ -24,16 +24,18 @@
                 <img src="" alt="Picture">
             </div>
         </div>
-    </section>
+    </base-layout>
 </template>
 
 <script>
+import BaseLayout from '../BaseLayout.vue'
 export default {
+    components: { BaseLayout },
 
 }
 </script>
 
-<style>
+<style scoped>
 #about {
     display: flex;
     flex-direction: column;

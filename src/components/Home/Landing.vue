@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #landing {
     height: 100vh;
     background-image: url("https://i.postimg.cc/PrF24nsR/pineapple-gcd1922933-1920.jpg");

@@ -1,22 +1,26 @@
 <template>
-    <section id="services">
+    <base-layout section-title="What we offer" id="services">
         <!-- Add minor hover effects to the containers -->
-        <div class="m-contain">
-            <h2>Maintenance</h2>
-        </div>
+        <router-link to="/maintenance">
+            <div class="m-contain">
+                <h2>Maintenance</h2>
+            </div>
+        </router-link>
         <div class="r-contain">
             <h2>Real Estate</h2>
         </div>
-    </section>
+    </base-layout>
 </template>
 
 <script>
+import BaseLayout from '../BaseLayout.vue'
 export default {
+    components: { BaseLayout },
 
 }
 </script>
 
-<style>
+<style scoped>
 #services {
     display: flex;
     margin-top: 15px;
