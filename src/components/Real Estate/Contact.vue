@@ -1,0 +1,13 @@
+<template>
+    <contact-layout></contact-layout>
+</template>
+
+<script>
+export default {
+
+}
+</script>
+
+<style>
+
+</style>

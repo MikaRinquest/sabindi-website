@@ -9,11 +9,11 @@
                     <li class="list-item">Go back home</li>
                 </router-link>
                 |
-                <li class="list-item">WeTrade24</li>
-                |
-                <li class="list-item">Listings</li>
-                |
                 <li class="list-item">Services</li>
+                |
+                <li class="list-item">Portfolio</li>
+                |
+                <li class="list-item">Affiliations</li>
                 |
                 <li class="list-item">Contact</li>
             </ul>
@@ -33,7 +33,7 @@ export default {
     height: 5vh;
     width: 100vw;
     display: flex;
-    /* position: fixed; */
+    position: fixed;
 }
 
 .list-holder {

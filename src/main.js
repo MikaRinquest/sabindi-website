@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min.js'
 
 import BaseLayout from './components/BaseLayout.vue'
+import ContactLayout from './components/ContactLayout.vue'
 
 
 const app = createApp(App)
@@ -13,6 +14,7 @@ const app = createApp(App)
 // .mount('#app')
 
 app.component("base-layout",BaseLayout)
+app.component("contact-layout",ContactLayout)
 
 router.isReady().then(() => {
     app.mount('#app');
