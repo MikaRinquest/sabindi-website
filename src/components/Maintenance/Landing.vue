@@ -2,8 +2,8 @@
 <div>
 <h1 id="services">Services</h1>
 <div id="container">
-    <div></div>
-    <div></div>
+    <div id="left"></div>
+    <div id="right"></div>
 </div>
 </div>
 </template>
@@ -20,9 +20,15 @@ export default {
     height:20vh;
     width:100%;
     background-color:orange;
+    margin-bottom: 2%;
 }
-#container>div~div{
-    border: 5px solid;
+#left{
+    border-right: 3px solid;
+    width:50%;
+}
+
+#right{
+    border-left: 3px solid;
     width:50%;
 }
 #services{
