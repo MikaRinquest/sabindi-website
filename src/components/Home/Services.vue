@@ -6,9 +6,11 @@
                 <h2>Maintenance</h2>
             </div>
         </router-link>
+        <router-link to="/real-estate">
         <div class="r-contain">
             <h2>Real Estate</h2>
         </div>
+        </router-link>
     </base-layout>
 </template>
 
