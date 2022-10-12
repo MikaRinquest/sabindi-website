@@ -1,48 +1,97 @@
 <template>
-    <div>
-    <h1>Affiliations</h1>
-    
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="https://picsum.photos/100" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/100" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/100" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-    </div>
-  </div>
+  <base-layout section-title="Affiliations" id="affiliates">
+    <Carousel :itemsToShow="4" :wrapAround="true" :transition="500">
+      <Slide v-for="slide in slides" :key="slide.id">
+        <div class="carousel__item"><img :src="slide.img" alt="Certifications" /></div>
+      </Slide>
+      <template #addons>
+        <Pagination />
+        <Navigation />
+      </template>
+    </Carousel>
+  </base-layout>
 </template>
 
 <script>
-export default {
+import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
 
+import 'vue3-carousel/dist/carousel.css'
+
+export default {
+  data() {
+    return {
+      slides: [
+        {
+          id: "1",
+          img: "https://picsum.photos/200/300"
+        },
+        {
+          id: "2",
+          img: "https://picsum.photos/200/300"
+        },
+        {
+          id: "3",
+          img: "https://picsum.photos/200/300"
+        },
+        {
+          id: "4",
+          img: "https://picsum.photos/200/300"
+        },
+        {
+          id: "5",
+          img: "https://picsum.photos/200/300"
+        },
+      ]
+    }
+  },
+  name: 'Autoplay',
+  components: {
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
+  },
 }
 </script>
 
 <style scoped>
-h1{
-    text-decoration: underline;
-    margin-bottom: 2%;
+.carousel__slide {
+  padding: 5px;
 }
 
-#container{
-    display: flex;
-    height:50vh;
-    width:100%;
-    background-color:orange;
-    margin-bottom: 2%;
+.carousel__viewport {
+  perspective: 2000px;
+}
+
+.carousel__track {
+  transform-style: preserve-3d;
+}
+
+.carousel__slide--sliding {
+  transition: 0.5s;
+}
+
+.carousel__slide {
+  opacity: 0.9;
+  transform: rotateY(-20deg) scale(0.9);
+}
+
+.carousel__slide--active~.carousel__slide {
+  transform: rotateY(20deg) scale(0.9);
+}
+
+.carousel__slide--prev {
+  opacity: 1;
+  transform: rotateY(-10deg) scale(0.95);
+}
+
+.carousel__slide--next {
+  opacity: 1;
+  transform: rotateY(10deg) scale(0.95);
+}
+
+.carousel__slide--active {
+  opacity: 1;
+  transform: rotateY(0) scale(1.1);
 }
 </style>

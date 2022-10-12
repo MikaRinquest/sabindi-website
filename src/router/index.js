@@ -13,6 +13,13 @@ name:"Home",
 component:Home
 },
 
+
+{
+path:"/about",
+name:"Home-About",
+component:() => import("../components/Home/About.vue")
+},
+
 {
 path:"/real-estate",
 name:RealEstate,

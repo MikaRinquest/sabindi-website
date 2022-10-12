@@ -1,7 +1,7 @@
 <template>
     <section id="landing">
         <div class="landing-holder">
-            <h1>Welcome To...</h1>
+            <h1 class="title">Welcome To...</h1>
             <img src="https://picsum.photos/200" alt="Sabindi Logo" class="sabindi-home" />
             <!-- Image will have an animation fading in -->
         </div>
@@ -17,8 +17,8 @@ export default {
 <style scoped>
 #landing {
     height: 100vh;
-    background-image: url("https://i.postimg.cc/PrF24nsR/pineapple-gcd1922933-1920.jpg");
-    background-repeat: no-repeat;
+    background-image: url("https://i.postimg.cc/nrWY5hk0/sc.jpg");
+    /* background-repeat: no-repeat; */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -29,6 +29,10 @@ export default {
 .landing-holder {
     display: flex;
     flex-direction: column;
+}
+
+.title {
+    color: white;
 }
 
 .sabindi-home {

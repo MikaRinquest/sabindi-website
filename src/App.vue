@@ -1,8 +1,8 @@
 <template>
   <router-view></router-view>
-  <div id="cursor">
+  <!-- <div id="cursor">
     <div id="center"></div>
-  </div>
+  </div> -->
   <Footer />
 </template>
 

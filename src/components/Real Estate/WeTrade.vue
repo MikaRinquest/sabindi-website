@@ -1,5 +1,5 @@
 <template>
-    <base-layout section-title="WeTrade">
+    <base-layout section-title="WeTrade" id=wetrade>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptate? Quas ad corrupti beatae facilis
             dolore illo fugit accusantium, laboriosam ipsa exercitationem excepturi error in itaque ut officiis
             praesentium voluptates.
@@ -13,6 +13,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

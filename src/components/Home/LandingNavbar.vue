@@ -1,19 +1,38 @@
 <template>
-    <nav id="nav">
-        <div>
+    <nav id="nav" class="d-flex">
+        <div class="col-4">
             <img src="" alt="Company Logo">
         </div>
-        <div>
+        <div class="col-8">
             <ul class="list-holder">
-                <li class="list-item">Home</li>
+                <a href="#landing" class="nav-link">
+                    <li class="list-item">Home</li>
+                </a>
                 |
-                <li class="list-item">Services</li>
+                <a href="#h-services" class="nav-link">
+                    <li class="list-item">Services</li>
+                </a>
                 |
-                <li class="list-item">About</li>
+                <a href="#about" class="nav-link">
+                    <li class="list-item">About</li>
+                </a>
                 |
-                <li class="list-item">Industries serviced</li>
+                <a href="#industries" class="nav-link">
+                    <li class="list-item">Industries serviced</li>
+                </a>
                 |
-                <li class="list-item">Contact</li>
+                <a href="#certification" class="nav-link">
+                    <li class="list-item">Certifications</li>
+                </a>
+                |
+                <a href="#testimonials" class="nav-link">
+                    <li class="list-item">Testimonials</li>
+                </a>
+                |
+                <a href="#h-contact" class="nav-link">
+                    <li class="list-item">Contact</li>
+                </a>
+
             </ul>
         </div>
     </nav>
@@ -28,7 +47,7 @@ export default {
 <style scoped>
 #nav {
     border: 1px solid black;
-    height: 5vh;
+    height: 6vh;
     width: 100vw;
     display: flex;
     position: fixed;

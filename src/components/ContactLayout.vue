@@ -1,5 +1,5 @@
 <template>
-    <base-layout section-title="Get into contact with us.">
+    <base-layout section-title="Get into contact with us." id="contact">
         <div class="d-flex w-100">
             <div class="contact w-50">
                 <form class="d-flex flex-column ">
@@ -18,8 +18,9 @@
                         <label for="floatingInput">Name and Surname</label>
                     </div>
                     <div class="form-floating ms-2 mb-2">
-                        <textarea class="form-control" placeholder="Type your message here" id="msg"></textarea>
-                        <label for="floatingTextarea">Message</label>
+                        <textarea class="form-control textarea" placeholder="Type your message here"
+                            id="msg"></textarea>
+                        <label for=" floatingTextarea">Message</label>
                     </div> <button type="submit">Send a message</button>
                 </form>
             </div>
@@ -37,8 +38,17 @@ export default {
 </script>
 
 <style scoped>
+.contact {
+    padding-left: 100px;
+    align-self: center;
+}
+
 .sharedinput {
     width: 45%;
     /* height: 35px; */
+}
+
+.textarea {
+    height: 150px;
 }
 </style>

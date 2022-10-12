@@ -1,7 +1,7 @@
 <template>
-    <base-layout section-title="Listings">
-        <div class="container d-flex flex-wrap justify-content-center">
-            <div class="card col-3 me-2 mb-2">
+    <base-layout section-title="Listings" id="listings">
+        <div class="container d-flex flex-wrap justify-content-evenly">
+            <div class="card col-3 me-2 mb-2 mt-2">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -9,7 +9,7 @@
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-3 me-2 mb-2">
+            <div class="card col-3 me-2 mb-2 mt-2">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -17,7 +17,7 @@
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-3 me-2 mb-2">
+            <div class="card col-3 me-2 mb-2 mt-2">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -25,7 +25,7 @@
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-3 me-2 mb-2">
+            <div class="card col-3 me-2 mb-2 mt-2">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -33,7 +33,7 @@
                         card's content.</p>
                 </div>
             </div>
-            <div class="card col-3 me-2 mb-2">
+            <div class="card col-3 me-2 mb-2 mt-2">
                 <img src="..." class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Card title</h5>
@@ -52,6 +52,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>

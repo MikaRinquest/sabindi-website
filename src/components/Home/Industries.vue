@@ -1,6 +1,6 @@
 <template>
-    <base-layout section-title="Industries serviced">
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <base-layout id="industries" section-title="Industries serviced">
+        <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
                     type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"> Insurance</button>
@@ -19,7 +19,7 @@
                     Estate</button>
             </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
+        <div class="tab-content d-flex justify-content-center" id="myTabContent">
             <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">Placeholder content</div>
             <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
@@ -41,5 +41,15 @@ export default {
 </script>
 
 <style scoped>
+.nav-item {
+    font-size: 25px;
+}
 
+.nav-link {
+    color: var(--sabindi);
+}
+
+.nav-link:hover {
+    color: black;
+}
 </style>

@@ -1,21 +1,29 @@
 <template>
     <nav id="nav">
-        <div>
+        <div class="col-5">
             <img src="" alt="Company Logo">
         </div>
-        <div>
+        <div class="col-7">
             <ul class="list-holder">
                 <router-link to="/">
                     <li class="list-item">Go back home</li>
                 </router-link>
                 |
-                <li class="list-item">WeTrade24</li>
+                <a href="#wetrade">
+                    <li class="list-item">WeTrade24</li>
+                </a>
                 |
-                <li class="list-item">Listings</li>
+                <a href="#listings">
+                    <li class="list-item">Listings</li>
+                </a>
                 |
-                <li class="list-item">Services</li>
+                <a href="#r-services">
+                    <li class="list-item">Services</li>
+                </a>
                 |
-                <li class="list-item">Contact</li>
+                <a href="#r-contact">
+                    <li class="list-item">Contact</li>
+                </a>
             </ul>
         </div>
     </nav>
@@ -30,10 +38,10 @@ export default {
 <style scoped>
 #nav {
     border: 1px solid black;
-    height: 5vh;
+    height: 6vh;
     width: 100vw;
     display: flex;
-    /* position: fixed; */
+    position: fixed;
 }
 
 .list-holder {
