@@ -1,9 +1,9 @@
 <template>
     <base-layout section-title="Get into contact with us." id="contact">
-        <div class="d-flex w-100">
-            <div class="contact w-50">
+        <div class="c-contain d-flex ">
+            <div class="contact col-6">
                 <form class="d-flex flex-column ">
-                    <div class="d-flex justify-content-center mb-2">
+                    <div class="contact-details d-flex justify-content-center mb-2">
                         <div class="form-floating sharedinput me-3">
                             <input type="email" class="form-control" id="email" placeholder="name@example.com">
                             <label for="floatingInput">Email address</label>
@@ -24,7 +24,7 @@
                     </div> <button type="submit">Send a message</button>
                 </form>
             </div>
-            <div class="map w-50 ms-5">
+            <div class="map col-6 ms-5">
                 <slot></slot>
             </div>
         </div>
@@ -38,6 +38,10 @@ export default {
 </script>
 
 <style scoped>
+.c-contain {
+    width: 99%;
+}
+
 .contact {
     padding-left: 100px;
     align-self: center;
@@ -51,4 +55,102 @@ export default {
 .textarea {
     height: 150px;
 }
+
+/* Small phones */
+@media only screen and (max-width:576px) {
+    .c-contain {
+        flex-direction: column;
+    }
+
+    .contact {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%
+    }
+
+    .contact-details {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sharedinput {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-left: 0.5rem;
+    }
+
+    .form-floating {
+        margin-left: 0 !important;
+    }
+
+    .map {
+        margin-left: 0 !important;
+        width: 95%;
+    }
+
+}
+
+/* Bigger Phones */
+@media only screen and (min-width:576px) {
+    .c-contain {
+        flex-direction: column;
+    }
+
+    .contact {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%
+    }
+
+    .contact-details {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sharedinput {
+        width: 100%;
+        margin-bottom: 5px;
+        margin-left: 0.5rem;
+    }
+
+    .form-floating {
+        margin-left: 0 !important;
+    }
+
+    .map {
+        margin-left: 0 !important;
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media only screen and (min-width:768px) {
+    .c-contain {
+        flex-direction: row;
+    }
+
+    .contact {
+        align-self: center;
+        width: 50%;
+    }
+
+    .contact-details {
+        flex-direction: row;
+    }
+
+    .sharedinput {
+        width: 45%;
+        /* height: 35px; */
+    }
+
+    .map {
+        width: 50%;
+    }
+}
+
+/* Laptops */
+@media only screen and (min-width:992px) {}
+
+/* Desktops */
+@media only screen and (min-width:1200px) {}
 </style>

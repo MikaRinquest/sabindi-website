@@ -1,6 +1,6 @@
 <template>
   <base-layout section-title="Affiliations" id="affiliates">
-    <Carousel :itemsToShow="4" :wrapAround="true" :transition="500">
+    <Carousel :settings="settings" :breakpoints="breakpoints">
       <Slide v-for="slide in slides" :key="slide.id">
         <div class="carousel__item"><img :src="slide.img" alt="Certifications" /></div>
       </Slide>
@@ -18,32 +18,49 @@ import { Carousel, Pagination, Slide, Navigation } from 'vue3-carousel'
 import 'vue3-carousel/dist/carousel.css'
 
 export default {
-  data() {
-    return {
-      slides: [
-        {
-          id: "1",
-          img: "https://picsum.photos/200/300"
-        },
-        {
-          id: "2",
-          img: "https://picsum.photos/200/300"
-        },
-        {
-          id: "3",
-          img: "https://picsum.photos/200/300"
-        },
-        {
-          id: "4",
-          img: "https://picsum.photos/200/300"
-        },
-        {
-          id: "5",
-          img: "https://picsum.photos/200/300"
-        },
-      ]
-    }
-  },
+  data: () => ({
+    settings: {
+      itemsToShow: 1,
+      snapAlign: 'center',
+      wrapAround: "true",
+      transition: "500",
+    },
+    breakpoints: {
+      // 700px and up
+      700: {
+        itemsToShow: 2,
+        snapAlign: 'center',
+        // From 900px the image sizes should be 400px, else make it 300
+      },
+      // 1024 and up
+      1024: {
+        itemsToShow: 3,
+        snapAlign: 'center',
+      },
+    },
+    slides: [
+      {
+        id: "1",
+        img: "https://picsum.photos/300"
+      },
+      {
+        id: "2",
+        img: "https://picsum.photos/300"
+      },
+      {
+        id: "3",
+        img: "https://picsum.photos/300"
+      },
+      {
+        id: "4",
+        img: "https://picsum.photos/300"
+      },
+      {
+        id: "5",
+        img: "https://picsum.photos/300"
+      },
+    ],
+  }),
   name: 'Autoplay',
   components: {
     Carousel,

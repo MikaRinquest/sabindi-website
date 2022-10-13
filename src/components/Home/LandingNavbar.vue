@@ -45,19 +45,12 @@ export default {
 </script>
 
 <style scoped>
-#nav {
-    border: 1px solid black;
-    height: 6vh;
-    width: 100vw;
-    display: flex;
-    position: fixed;
-}
-
 .list-holder {
     font-size: 24px;
     display: flex;
     align-items: center;
     justify-content: end;
+    margin-right: 5px;
 }
 
 .list-item {
