@@ -1,6 +1,6 @@
 <template>
     <nav id="nav" class="d-flex">
-        <div class="col-4">
+        <div class="col-3">
             <img src="" alt="Company Logo">
         </div>
         <div class="col-8">
@@ -17,7 +17,7 @@
                     <li class="list-item">About</li>
                 </a>
                 |
-                <a href="#industries" class="nav-link">
+                <a href="#clients" class="nav-link">
                     <li class="list-item">Industries serviced</li>
                 </a>
                 |

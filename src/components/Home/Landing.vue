@@ -1,8 +1,15 @@
 <template>
     <section id="landing">
         <div class="landing-holder">
-            <h1 class="title">Welcome To...</h1>
-            <img src="https://picsum.photos/200" alt="Sabindi Logo" class="sabindi-home" />
+            <div class="text-holder col-5">
+                <h1 class="welcome">Welcome to Sabindi Group Global</h1>
+                <h3 class="slogan">Your <span class="slogan-inner">one stop property shop</span></h3>
+            </div>
+            <div class="col-3"></div>
+            <div class="col-4">
+                <img src="https://i.postimg.cc/GmJRCkL8/IMG-20221102-WA0073-edit-137035315313985.jpg"
+                    alt="Superhero Pose" class="superhero">
+            </div>
             <!-- Image will have an animation fading in -->
         </div>
     </section>
@@ -28,15 +35,23 @@ export default {
 
 .landing-holder {
     display: flex;
-    flex-direction: column;
 }
 
-.title {
+.welcome {
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }
 
-.sabindi-home {
-    text-align: center;
-    padding-top: 10px;
+.superhero {
+    width: 400px;
+}
+
+.slogan {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.slogan-inner {
+    color: var(--test)
 }
 </style>

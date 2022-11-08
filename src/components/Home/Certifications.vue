@@ -1,5 +1,5 @@
 <template>
-    <base-layout section-title="Certifications" id="certification">
+    <base-layout section-title="Our Certifications" id="certification">
         <Carousel :settings="settings" :breakpoints="breakpoints">
             <Slide v-for="slide in slides" :key="slide.id">
                 <div class="carousel__item"><img :src="slide.img" alt="Certifications" /></div>
@@ -41,27 +41,31 @@ export default {
         slides: [
             {
                 id: "1",
-                img: "https://picsum.photos/300"
+                img: "https://i.postimg.cc/gJDnSK35/nhbrc.jpg"
             },
             {
                 id: "2",
-                img: "https://picsum.photos/300"
+                img: "https://i.postimg.cc/wBDtJzM9/ppra.png"
             },
             {
                 id: "3",
-                img: "https://picsum.photos/300"
+                img: "https://i.postimg.cc/zvzgSGPn/bibc-logo-img.jpg"
             },
             {
                 id: "4",
-                img: "https://picsum.photos/300"
+                img: "https://i.postimg.cc/FRgSLLGr/cidb-logo-about.jpg"
             },
             {
                 id: "5",
-                img: "https://picsum.photos/300"
+                img: "https://i.postimg.cc/xTVZQrGN/iopsa.png"
+            },
+            {
+                id: "6",
+                img: "https://i.postimg.cc/JnbbcFsS/csd.jpg"
             },
         ],
     }),
-    
+
     name: 'Autoplay',
     components: {
         Carousel,

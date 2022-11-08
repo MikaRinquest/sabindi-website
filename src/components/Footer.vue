@@ -6,11 +6,12 @@
         </div>
         <div class="socials col-6">
             <p class="f-social">Follow Sabindi on Social Media</p>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-facebook"></i>
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-tiktok"></i>
+            <a href="https://www.instagram.com/sabindisocials/" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100064313490282" target="_blank"><i
+                    class="bi bi-facebook"></i></a>
+            <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://twitter.com/SabindiGG/" target="_blank"><i class="bi bi-twitter"></i></a>
+            <a href="https://www.tiktok.com/@sabindigroupglobal" target="_blank"><i class="bi bi-tiktok"></i></a>
         </div>
     </div>
 </template>
@@ -22,6 +23,10 @@ export default {
 </script>
 
 <style scoped>
+#footer {
+    height: 10vh;
+}
+
 .copyright {
     font-size: 20px;
     justify-self: flex-start;

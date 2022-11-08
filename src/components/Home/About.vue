@@ -1,28 +1,28 @@
 <template>
     <base-layout id="about" section-title="About Sabindi">
-        <div class="about1">
-            <div class="img1">
-                <img src="" alt="Picture">
+        <div class="content-holder">
+            <div class="a-content">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, obcaecati a! Ipsa eum dolorum
+                    laborum quasi, nulla, culpa veniam soluta repudiandae vitae ipsam illo, cumque velit? Quidem id
+                    maxime itaque?
+                    Libero facilis in repellendus laudantium illum modi ipsa ut omnis. Itaque voluptate exercitationem
+                    in. Quasi saepe expedita praesentium aperiam odit ad fugiat necessitatibus! Suscipit deleniti
+                    incidunt possimus, eos maiores labore?
+                    Placeat voluptate labore itaque quaerat omnis alias maxime consequatur enim iusto perferendis, vitae
+                    doloremque dignissimos harum voluptatem ea? Error impedit animi iusto maxime odio facilis vitae eius
+                    adipisci quasi fugit!
+                    Explicabo animi odit, facere ducimus sit molestiae a amet ipsam sint pariatur in, cumque quos minus
+                    id? Alias exercitationem, quis animi, totam necessitatibus distinctio dolore perferendis reiciendis,
+                    recusandae delectus nam.
+                    Repellendus ducimus repellat vel consequuntur deserunt. Alias rem id, architecto sequi illum libero
+                    possimus, nisi aspernatur, distinctio dolores tempore unde. Itaque neque placeat expedita quis
+                    reprehenderit harum rerum alias ducimus!</p>
+                <router-link to="About">
+                    <h3>Learn more about Sabindi here!</h3>
+                </router-link>
             </div>
-            <div class="text1">
-                <h2 class="h1">About Us</h2>
-                <p class="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perferendis cum nostrum
-                    tempore
-                    consectetur nemo rerum adipisci eaque aliquam quisquam atque temporibus, voluptas expedita doloribus
-                    ratione qui mollitia voluptatum autem?</p>
-            </div>
-        </div>
-        <div class="about2">
-            <div class="text2">
-                <h2>About Us</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis perferendis cum nostrum
-                    tempore
-                    consectetur nemo rerum adipisci eaque aliquam quisquam atque temporibus, voluptas expedita doloribus
-                    ratione qui mollitia voluptatum autem?</p>
-            </div>
-            <div class="img2">
-                <img src="" alt="Picture">
-            </div>
+            <div class="a-img"><img src="https://i.postimg.cc/rwXRpzyf/Polish-20221104-112247759.png" alt=""
+                    class="abdul"></div>
         </div>
     </base-layout>
 </template>
@@ -36,48 +36,23 @@ export default {
 </script>
 
 <style scoped>
-#about {
-    display: flex;
-    flex-direction: column;
+.content-holder {
+    display: inline-flex;
+    justify-content: center;
 }
 
-.about1 {
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
+.a-content {
+    width: 60%;
+    align-self: center;
+
 }
 
-.img1 {
-    width: 40%;
-    padding-left: 20px;
+.a-img {
+    width: 20%;
+    margin-left: 5%;
 }
 
-.text1 {
-    width: 40%;
-}
-
-.h1 {
-    text-align: end;
-}
-
-.p1 {
-    text-align: start;
-}
-
-.about2 {
-    display: flex;
-    justify-content: space-around;
-    width: 100vw;
-}
-
-.text2 {
-    width: 40%;
-    padding-top: 10px;
-    padding-left: 20px;
-}
-
-.img2 {
-    width: 40%;
-    padding-top: 10px;
+.abdul {
+    height: 500px;
 }
 </style>

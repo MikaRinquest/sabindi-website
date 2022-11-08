@@ -1,17 +1,29 @@
 <template>
     <base-layout id="h-services" section-title="What we offer">
-        <div class="services">
-            <!-- Add minor hover effects to the containers -->
-            <router-link to="/maintenance" class="link">
-                <div class="m-contain">
-                    <h2 class="m-title">Maintenance</h2>
+        <div class="d-flex">
+            <div class="col-7"></div>
+            <div class="col-5">
+                <div class="maintenance">
+                    <h2>Maintenance</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam fugiat voluptatibus nesciunt
+                        dolorum
+                        rerum blanditiis sunt, perspiciatis quam eligendi sapiente adipisci, quibusdam vitae dicta. Quis
+                        modi molestiae sapiente exercitationem eos!</p>
+                    <router-link to="maintenance">
+                        <button>Go</button>
+                    </router-link>
                 </div>
-            </router-link>
-            <router-link to="/real-estate" class="link">
-                <div class="r-contain">
-                    <h2 class="r-title">Real Estate</h2>
+                <div class="real-estate">
+                    <h2>Real Estate</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequatur quam impedit.
+                        Molestiae, sequi. Repellat cupiditate est quia distinctio sequi nesciunt! Non deserunt rerum
+                        illum
+                        ad voluptatum repudiandae voluptas provident.</p>
+                    <router-link to="real-estate">
+                        <button>Go</button>
+                    </router-link>
                 </div>
-            </router-link>
+            </div>
         </div>
     </base-layout>
 </template>
