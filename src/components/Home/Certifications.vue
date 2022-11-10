@@ -1,8 +1,8 @@
 <template>
     <base-layout section-title="Our Certifications" id="certification">
-        <Carousel :settings="settings" :breakpoints="breakpoints">
+        <Carousel :settings="settings" :breakpoints="breakpoints" :autoplay="2500">
             <Slide v-for="slide in slides" :key="slide.id">
-                <div class="carousel__item"><img :src="slide.img" alt="Certifications" /></div>
+                <div class="carousel__item"><img :src="slide.img" alt="Certifications" class="c-img" /></div>
             </Slide>
             <template #addons>
                 <Pagination />
@@ -41,27 +41,27 @@ export default {
         slides: [
             {
                 id: "1",
-                img: "https://i.postimg.cc/gJDnSK35/nhbrc.jpg"
+                img: "https://i.postimg.cc/BnkWvMXz/nhbrc.jpg"
             },
             {
                 id: "2",
-                img: "https://i.postimg.cc/wBDtJzM9/ppra.png"
+                img: "https://i.postimg.cc/sDfCHMkT/ppra.png"
             },
             {
                 id: "3",
-                img: "https://i.postimg.cc/zvzgSGPn/bibc-logo-img.jpg"
+                img: "https://i.postimg.cc/J4TVf1mM/bibc-logo-img.jpg"
             },
             {
                 id: "4",
-                img: "https://i.postimg.cc/FRgSLLGr/cidb-logo-about.jpg"
+                img: "https://i.postimg.cc/W1hLjQbr/cidb-logo-about.jpg"
             },
             {
                 id: "5",
-                img: "https://i.postimg.cc/xTVZQrGN/iopsa.png"
+                img: "https://i.postimg.cc/vHxpDCVd/iopsa.png"
             },
             {
                 id: "6",
-                img: "https://i.postimg.cc/JnbbcFsS/csd.jpg"
+                img: "https://i.postimg.cc/59Rh4fj3/csd.jpg"
             },
         ],
     }),
@@ -115,5 +115,15 @@ export default {
 .carousel__slide--active {
     opacity: 1;
     transform: rotateY(0) scale(1.1);
+}
+
+.c-img {
+    width: 400px;
+}
+
+@media only screen and (max-width:900px) {
+    .c-img {
+        width: 250px;
+    }
 }
 </style>

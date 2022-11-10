@@ -8,21 +8,27 @@
                             <h3>Cape Town</h3>
                         </div>
                         <div class="address">
-                            <div class="icon"><i class="bi bi-house-fill"></i></div>
+                            <div class="icon"><i class="bi bi-map-fill"></i></div>
                             <div>
-                                <p class="text">Zeekoevlei, Grassy Park</p>
+                                <a href="https://goo.gl/maps/zfhF5sFkKw4tzeix8" target="_blank">
+                                    <p class="text">Zeekoevlei, Grassy Park</p>
+                                </a>
                             </div>
                         </div>
                         <div class="email">
                             <div class="icon"><i class="bi bi-envelope"></i></div>
                             <div>
-                                <p class="text">info@sabindi.co.za</p>
+                                <a href="mailto:enquiries@sabindi.co.za">
+                                    <p class="text">enquiries@sabindi.co.za</p>
+                                </a>
                             </div>
                         </div>
                         <div class="phone">
                             <div class="icon"><i class="bi bi-telephone-fill"></i></div>
                             <div>
-                                <p class="text">111 222 3333</p>
+                                <a href="https://wa.me/0817079992" target="_blank">
+                                    <p class="text">087 655 9555</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -31,7 +37,7 @@
                             <h3>Johannesburg</h3>
                         </div>
                         <div class="address">
-                            <div class="icon"><i class="bi bi-house-fill"></i></div>
+                            <div class="icon"><i class="bi bi-map-fill"></i></div>
                             <div>
                                 <p class="text">Valhalla, Centurion</p>
                             </div>

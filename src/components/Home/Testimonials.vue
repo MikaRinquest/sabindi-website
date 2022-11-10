@@ -3,8 +3,10 @@
         <Carousel :autoplay="4000" :wrap-around="true">
             <Slide v-for="slide in slides" :key="slide.id">
                 <div class="carousel__item">
-                    <h2>{{ slide.name }}</h2>
+                    <i class="bi bi-quote"></i>
                     <p class="testimonial">{{ slide.testimonial }}</p>
+                    <h2>{{ slide.name }}</h2>
+                    <i class="bi bi-quote"></i>
                 </div>
             </Slide>
 
@@ -57,6 +59,10 @@ export default {
     word-break: break-word;
 }
 
+.bi-quote {
+    font-size: 30px;
+}
+
 .carousel-control-next {
     color: black
 }
@@ -78,7 +84,8 @@ export default {
 /* Desktops */
 @media only screen and (min-width:1200px) {
     .testimonial {
-        width: 700px;
+        width: 1000px;
+        font-size: 20px;
     }
 }
 </style>

@@ -6,11 +6,14 @@
 
 <script>
 import Footer from "./components/Footer.vue"
-
+import AOS from 'aos'
 
 export default {
   components: {
     Footer,
+  },
+  created() {
+    AOS.init()
   }
 }
 </script>

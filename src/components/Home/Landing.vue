@@ -1,13 +1,13 @@
 <template>
     <section id="landing">
         <div class="landing-holder">
-            <div class="text-holder col-5">
+            <div class="text-holder col-5" data-aos="fade-up">
                 <h1 class="welcome">Welcome to Sabindi Group Global</h1>
                 <h3 class="slogan">Your <span class="slogan-inner">one stop property shop</span></h3>
             </div>
             <div class="col-3"></div>
-            <div class="col-4">
-                <img src="https://i.postimg.cc/GmJRCkL8/IMG-20221102-WA0073-edit-137035315313985.jpg"
+            <div class="col-4" data-aos="fade-down">
+                <img src="https://i.postimg.cc/PrN2qD0p/IMG-20221102-WA0073-edit-137035315313985.jpg"
                     alt="Superhero Pose" class="superhero">
             </div>
             <!-- Image will have an animation fading in -->
@@ -43,7 +43,7 @@ export default {
 }
 
 .superhero {
-    width: 400px;
+    width: 100%;
 }
 
 .slogan {

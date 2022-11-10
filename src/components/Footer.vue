@@ -46,6 +46,7 @@ export default {
 .bi {
     font-size: 20px;
     padding-right: 10px;
+    color: white;
 }
 
 .bi-instagram:hover {

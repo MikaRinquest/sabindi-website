@@ -1,6 +1,6 @@
 <template>
-    <base-layout id="h-services" section-title="What we offer">
-        <div class="d-flex">
+    <base-layout id="h-services" section-title="What We Offer">
+        <!-- <div class="d-flex">
             <div class="col-7"></div>
             <div class="col-5">
                 <div class="maintenance">
@@ -24,6 +24,33 @@
                     </router-link>
                 </div>
             </div>
+        </div> 
+     </div> -->
+        <div class="s-holder">
+            <div class="maintenance col-5">
+                <h3 class="text-center">Maintenance</h3>
+                <img src="https://i.postimg.cc/MKGfPw5L/tool-icon-8066.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, illo. Tempore qui eos maiores!
+                    Exercitationem consequatur dignissimos odit quasi, ipsa earum molestias facere voluptate vitae totam
+                    temporibus voluptatum amet! Sint!</p>
+                <router-link to="maintenance">
+                    <button class="lm-button d-flex align-items-center">
+                        <p class="learn-more">Learn more</p>
+                    </button>
+                </router-link>
+            </div>
+            <div class="real-estate col-5">
+                <h3 class="text-center">Real Estate</h3>
+                <img src="https://i.postimg.cc/Pfy8QJWZ/toppng-com-icon-home-png-home-icon-ios-1526x1461.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, illo. Tempore qui eos maiores!
+                    Exercitationem consequatur dignissimos odit quasi, ipsa earum molestias facere voluptate vitae totam
+                    temporibus voluptatum amet! Sint!</p>
+                <router-link to="real-estate">
+                    <button class="lm-button d-flex align-items-center">
+                        <p class="learn-more">Learn more</p>
+                    </button>
+                </router-link>
+            </div>
         </div>
     </base-layout>
 </template>
@@ -37,113 +64,79 @@ export default {
 </script>
 
 <style scoped>
-.services {
-    display: flex;
-    min-height: 50vh;
-    justify-content: space-evenly;
-    margin-top: 15px;
-    padding-bottom: 15px;
+#h-services {
+    /* background-color: var(--test); */
+    background-color: #FF9530;
+    box-shadow: 5px 5px 10px #acacac,
+        -5px -5px 10px #acacac;
 }
 
-.m-contain {
-    border: 2px solid black;
-    min-width: 35vw;
-    margin-right: 5vw;
-    margin-left: 30px;
+.s-holder {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.maintenance,
+.real-estate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-center {
+    color: black;
+    font-size: 45px;
+}
+
+h3+img {
+    height: 70%;
+}
+
+img+p {
+    padding-top: 5px;
     text-align: center;
-    height: 40vh;
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.b-holder {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 0;
+}
+
+.lm-button {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://i.postimg.cc/gc6wPdnT/plumber-g11c40faf8-1280.jpg");
-    background-size: contain;
-    box-shadow: 11px 11px 12px #aaaaaa,
-        -11px -11px 12px #ffffff;
-    transition: 0.3s;
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: #FFFDD0;
+    transition: 0.5s;
 }
 
-.m-title {
-    transition: 0.3s;
+.lm-button:hover,
+.lm-button:focus {
+    box-shadow: inset 0 -3.25em 0 0 #f8f0c6;
 }
 
-.m-contain:hover {
-    /* font-size: 5rem; */
-    min-width: 40vw;
-    height: 45vh;
-    box-shadow: 11px 11px 22px #5c5c5c,
-        -11px -11px 22px #ffffff;
-}
-
-.m-contain:hover>.m-title {
-    font-size: 3rem;
-}
-
-.r-contain {
-    border: 2px solid black;
-    min-width: 35vw;
-    margin-right: 5vw;
-    margin-left: 30px;
-    text-align: center;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://i.postimg.cc/KvS1GVTv/real-estate-agent-g5208c2924-1280.jpg");
-    background-size: contain;
-    box-shadow: 11px 11px 12px #aaaaaa,
-        -11px -11px 12px #ffffff;
-    transition: 0.3s;
-}
-
-.r-title {
-    transition: 0.3s;
-}
-
-.r-contain:hover {
-    min-width: 40vw;
-    height: 45vh;
-    box-shadow: 11px 11px 22px #5c5c5c,
-        -11px -11px 22px #ffffff;
-}
-
-.r-contain:hover>.r-title {
-    font-size: 3rem;
+.learn-more {
+    margin-bottom: 0;
 }
 
 /* Small phones */
-@media only screen and (max-width:576px) {
-    .services {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .link {
-        align-self: center;
-        margin-bottom: 50px;
-        width: 100%;
-    }
-}
+@media only screen and (max-width:576px) {}
 
 /* Bigger Phones */
-@media only screen and (min-width:576px) {
-    .services {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .link {
-        align-self: center;
-        margin-bottom: 50px;
-        width: 100%;
-    }
-}
+@media only screen and (min-width:576px) {}
 
 /* Tablets */
-@media only screen and (min-width:768px) {
-    .services {
-        flex-direction: row;
-    }
-}
+@media only screen and (min-width:768px) {}
+
 
 /* Laptops */
 @media only screen and (min-width:992px) {}

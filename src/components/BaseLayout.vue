@@ -14,15 +14,16 @@ export default {
 <style>
 .section {
     /* height: 100%; */
-    margin-top: 11vh;
-    margin-bottom: 75px;
+    padding-top: 5vh;
+    padding-bottom: 10px;
 }
 
 .sectionTitle {
     text-align: center;
+    text-decoration: underline;
     padding-bottom: 50px;
     font-size: 3rem;
-    color: var(--sabindi)
+    font-weight: 650;
 }
 
 @media only screen and (max-width:300px) {

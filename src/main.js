@@ -4,6 +4,7 @@ import App from "./App.vue";
 import router from "./router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
+import "aos/dist/aos.css";
 
 import BaseLayout from "./components/BaseLayout.vue";
 import WeTradeContactLayout from "./components/WeTrade-Contact-Layout.vue";
@@ -16,7 +17,10 @@ app.component("base-layout", BaseLayout);
 app.component("wt-contact-layout", WeTradeContactLayout);
 app.component("s-contact-layout", SabindiContactLayout);
 
+AOS.init();
+
 router.isReady().then(() => {
   app.mount("#app");
 });
+
 //   Helps use app.component

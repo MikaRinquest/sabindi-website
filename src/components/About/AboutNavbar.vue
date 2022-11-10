@@ -18,12 +18,9 @@
                 </a>
                 |
                 <a href="#affiliates">
-                    <li class="list-item">The Team</li>
+                    <li class="list-item">Clients</li>
                 </a>
                 |
-                <a href="#m-contact">
-                    <li class="list-item">Timeline</li>
-                </a>
             </ul>
         </div>
     </nav>
