@@ -3,10 +3,11 @@
         <Carousel :autoplay="4000" :wrap-around="true">
             <Slide v-for="slide in slides" :key="slide.id">
                 <div class="carousel__item">
-                    <i class="bi bi-quote"></i>
+                    <img :src="slide.img2" class="quote2" />
                     <p class="testimonial">{{ slide.testimonial }}</p>
+                    <img :src="slide.img1" class="quote1" />
                     <h2>{{ slide.name }}</h2>
-                    <i class="bi bi-quote"></i>
+                    <h3>{{ slide.subtitle }}</h3>
                 </div>
             </Slide>
 
@@ -26,11 +27,17 @@ export default {
                 {
                     id: "1",
                     name: "Mitch Dunn",
+                    subtitle: "Client",
+                    img1: "https://i.postimg.cc/d3fC35cm/quote1.png",
+                    img2: "https://i.postimg.cc/zvvWq96G/quote2.png",
                     testimonial: " A pipe burst on my property in Chestnut Drive Hout Bay just before Christmas. We had no idea where it was. Specialist gas detectors came 3 times, and a plumbing company tried for days to find the problem to no avail. I was feeling hopeless by now.On Friday afternoon at 4PM, my broker Tanja from AGM Mapsure told me Abdul and his guys from Sabindi Construction were on their way and would stay until Abdul saw me happy.I thought “yea right” By now I had all but given up. Amazing! They worked methodically, logically, and like Trojans until 10: 30PM.I could not believe it! The following day(Saturday), they isolated the faulty line, ran new pipes, re- paved the driveway, cemented up wherever was needed, replaced the blocked pressure reducer ran diagnostics and just about everything else like a regiment of happy soldiers, and then gave me back my water WITH extra pressure to boot.They worked without a break until 7PM.I have never seen such swift and organised action.I have never experienced work ethic on this level.Abdul(35) was a naval officer for 15 years, and he runs his operation like a battleship.I have never been so impressed by anyone, or any fledgling company before.So, for the first time in a very long time, I can very confidently recommend Abdul and his company called Sabindi Construction."
                 },
                 {
                     id: "2",
                     name: "Samantha Kiley",
+                    subtitle: "Client",
+                    img1: "https://i.postimg.cc/d3fC35cm/quote1.png",
+                    img2: "https://i.postimg.cc/zvvWq96G/quote2.png",
                     testimonial: "The guys were amazing! A tough morning with banks, new house..... All that nonsense, but once again SABINDI made it so much better😄😄"
                 },
                 // {
@@ -55,12 +62,25 @@ export default {
     text-align: center;
 }
 
-.testimonial {
-    word-break: break-word;
+.carousel__item {
+    display: flex;
+    flex-direction: column;
 }
 
-.bi-quote {
-    font-size: 30px;
+.testimonial {
+    word-break: break-word;
+    margin-top: 0.5rem;
+    color: grey;
+    font-style: italic;
+}
+
+.quote1 {
+    align-self: flex-end;
+}
+
+.quote1,
+.quote2 {
+    width: 5%;
 }
 
 .carousel-control-next {

@@ -7,10 +7,10 @@
     <Clients />
     <Certifications />
     <Testimonials />
-    <s-contact-layout id="h-contact"
+    <!-- <s-contact-layout id="h-contact"
         western-cape="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.82419609174!2d18.51457869999999!3d-34.048380499999986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc434c2a64ac1d%3A0xce5010552bd198ed!2sSabindi%20Group%20Global!5e0!3m2!1sen!2sza!4v1665473909584!5m2!1sen!2sza"
         gauteng="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3591.839190746782!2d28.1443916!3d-25.8088788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9563132a893003%3A0x2dcb2a7bc3f650f7!2s11%20Bothma%20Rd%2C%20Valhalla%2C%20Centurion%2C%200185!5e0!3m2!1sen!2sza!4v1667904604851!5m2!1sen!2sza">
-    </s-contact-layout>
+    </s-contact-layout> -->
     <Contact />
 </template>
 

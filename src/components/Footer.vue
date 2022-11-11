@@ -9,7 +9,8 @@
             <a href="https://www.instagram.com/sabindisocials/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100064313490282" target="_blank"><i
                     class="bi bi-facebook"></i></a>
-            <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/sabindi-group-global-45927b256/" target="_blank"><i
+                    class="bi bi-linkedin"></i></a>
             <a href="https://twitter.com/SabindiGG/" target="_blank"><i class="bi bi-twitter"></i></a>
             <a href="https://www.tiktok.com/@sabindigroupglobal" target="_blank"><i class="bi bi-tiktok"></i></a>
         </div>

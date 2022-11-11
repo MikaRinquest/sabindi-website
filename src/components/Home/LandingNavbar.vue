@@ -1,9 +1,9 @@
 <template>
     <nav id="nav" class="d-flex">
-        <div class="col-3">
-            <img src="" alt="Company Logo">
+        <div class="img-hold col-3">
+            <img src="../../assets/image857.png" alt="Company Logo" class="logo">
         </div>
-        <div class="col-8">
+        <div class="col-9">
             <ul class="list-holder">
                 <a href="#landing" class="nav-link">
                     <li class="list-item">Home</li>
@@ -45,6 +45,15 @@ export default {
 </script>
 
 <style scoped>
+.img-hold {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40%;
+}
+
 .list-holder {
     font-size: 24px;
     display: flex;

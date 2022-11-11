@@ -105,7 +105,7 @@ padding: 0!important;;
 
 /* GLOBAL WEBSITE FUNCTIONS */
 #nav{
-  background-color:white;
+  background-color:lightgray;
   opacity:0.9;
   z-index:5;
   position: fixed !important;

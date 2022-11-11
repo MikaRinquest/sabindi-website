@@ -1,98 +1,44 @@
 <template>
-    <div class="navbar">
-        <router-link to="/">Home</router-link>
-        <router-link to="/maintenance">News</router-link>
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <router-link to="/maintenance">Maintenance</router-link>
-                <router-link to="/real-estate">Real Estate</router-link>
-
-            </div>
+    <nav id="nav" class="d-flex">
+        <div class="col-3">
+            <img src="" alt="Company Logo">
         </div>
-    </div>
+        <div class="col-8">
+            <ul class="list-holder">
+                <router-link to="/" class="nav-link">
+                    <li class="list-item">Home</li>
+                </router-link>
+                <router-link to="/about" class="nav-link">
+                    <li class="list-item">About</li>
+                </router-link>
+                <button class="nav-link">
+                    <li class="list-item">Services</li>
+                </button>
+                <router-link to="/contact-us" class="nav-link">
+                    <li class="list-item">Contact Us</li>
+                </router-link>
+            </ul>
+        </div>
+    </nav>
 </template>
 
 <script>
-
 export default {
 
 }
 </script>
 
-<style>
-/* Navbar container */
-.navbar {
-    overflow: hidden;
-    background-color: #333;
-    font-family: Arial;
+<style scoped>
+.list-holder {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 5px;
 }
 
-/* Links inside the navbar */
-.navbar a {
-    float: left;
-    font-size: 16px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    font-size: 16px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    /* Important for vertical align on mobile phones */
-    margin: 0;
-    /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-    background-color: red;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
+.list-item {
+    list-style-type: none;
+    padding: 5px;
 }
 </style>
