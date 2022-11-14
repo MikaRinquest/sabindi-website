@@ -27,7 +27,7 @@
         </div> 
      </div> -->
         <div class="s-holder">
-            <div class="maintenance col-5">
+            <div class="maintenance col-md-5">
                 <h3 class="text-center">Maintenance</h3>
                 <img src="https://i.postimg.cc/MKGfPw5L/tool-icon-8066.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, illo. Tempore qui eos maiores!
@@ -39,7 +39,7 @@
                     </button>
                 </router-link>
             </div>
-            <div class="real-estate col-5">
+            <div class="real-estate col-md-5">
                 <h3 class="text-center">Real Estate</h3>
                 <img src="https://i.postimg.cc/Pfy8QJWZ/toppng-com-icon-home-png-home-icon-ios-1526x1461.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, illo. Tempore qui eos maiores!
@@ -129,7 +129,41 @@ img+p {
 }
 
 /* Small phones */
-@media only screen and (max-width:576px) {}
+@media only screen and (max-width:576px) {
+    .s-holder {
+        flex-direction: column;
+    }
+
+    .maintenance,
+    .real-estate {
+        width: 100%;
+    }
+
+    .maintenance {
+        padding-bottom: 15px;
+    }
+
+    .text-center {
+        font-size: 35px;
+    }
+
+    h3+img {
+        width: 55%
+    }
+
+    img+p {
+        width: 100%;
+        word-break: keep-all;
+        word-wrap: break-word;
+        font-size: 15px;
+    }
+
+    .lm-button {
+        width: 100%;
+    }
+
+}
+
 
 /* Bigger Phones */
 @media only screen and (min-width:576px) {}

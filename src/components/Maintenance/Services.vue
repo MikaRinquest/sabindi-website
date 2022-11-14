@@ -31,7 +31,7 @@
                         <li class="list-item"></li>
                         <li class="list-item"></li>
                         <li class="list-item"></li>
-                        <li class="list-item">As soon as we get approval, Sabindi is on their way to fix the problem.
+                        <li class="list-item">As soon as we get approval, Sabindi is on their way to check the damages.
                         </li>
                     </ul>
                 </div>

@@ -2,12 +2,12 @@
     <base-layout id="clients" section-title="Our Client Base">
         <div class="contain d-flex justify-content-center">
             <div class="holder d-flex ">
-                <div class="santam col-4 d-flex justify-content-center"><img
+                <div class="client  col-md-4 d-flex justify-content-center"><img
                         src="https://i.postimg.cc/bJ4zbpCQ/santam.jpg" alt="" class="img"></div>
-                <div class="bryte col-4 d-flex justify-content-center"><img
+                <div class="client  col-md-4 d-flex justify-content-center"><img
                         src="https://i.postimg.cc/rFXVwytT/bryte-insurers.jpg" alt="" class="img"></div>
-                <div class="absa col-4 d-flex justify-content-center"><img src="https://i.postimg.cc/2SCCnHwX/absa.webp"
-                        alt="" class="img"></div>
+                <div class="client  col-md-4 d-flex justify-content-center"><img
+                        src="https://i.postimg.cc/tRdK7Cj0/absa.jpg" alt="" class="img"></div>
 
             </div>
         </div>
@@ -32,9 +32,12 @@ export default {
     width: 95vw;
 }
 
+.client {
+    margin-bottom: 10px;
+}
+
 .img {
     width: 90%;
-    height: 50%;
     border: 1px solid black;
     transition: 0.3s;
     height: 250px;
@@ -49,14 +52,23 @@ export default {
 }
 
 /* Small phones */
-@media only screen and (max-width:576px) {}
+@media only screen and (max-width:576px) {
+    .contain {
+        height: 80vh;
+    }
+
+    .holder {
+        flex-direction: column;
+    }
+
+    .img {
+        height: 95%
+    }
+
+}
 
 /* Bigger Phones */
-@media only screen and (min-width:576px) {
-    .holder {
-        flex-direction: row;
-    }
-}
+@media only screen and (min-width:576px) {}
 
 /* Tablets */
 @media only screen and (min-width:768px) {}

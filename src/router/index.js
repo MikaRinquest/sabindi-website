@@ -29,25 +29,25 @@ const routes = [
 
   {
     path: "/real-estate",
-    name: RealEstate,
+    name: "RealEstate",
     component: RealEstate,
   },
 
   {
     path: "/maintenance",
-    name: Maintenance,
+    name: "Maintenance",
     component: Maintenance,
   },
 
   {
     path: "/about",
-    name: About,
+    name: "About",
     component: About,
   },
 
   {
     path: "/contact-us",
-    name: ContactUs,
+    name: "ContactUs",
     component: ContactUs,
   },
 

@@ -45,15 +45,6 @@ export default {
 </script>
 
 <style scoped>
-.img-hold {
-    display: flex;
-    align-items: center;
-}
-
-.logo {
-    height: 40%;
-}
-
 .list-holder {
     font-size: 24px;
     display: flex;

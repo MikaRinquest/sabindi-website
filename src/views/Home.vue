@@ -1,6 +1,6 @@
 <template>
-    <LandingNavbar />
-    <!-- <NeoNav /> -->
+    <!-- <LandingNavbar /> -->
+    <NeoNav />
     <Landing />
     <About />
     <Services />
@@ -16,8 +16,8 @@
 
 <script>
 import Landing from "../components/Home/Landing.vue"
-import LandingNavbar from "../components/Home/LandingNavbar.vue"
-// import NeoNav from "../components/Neo-Nav.vue"
+// import LandingNavbar from "../components/Home/LandingNavbar.vue"
+import NeoNav from "../components/Neo-Nav.vue"
 import Services from "../components/Home/Services.vue"
 import About from "../components/Home/About.vue"
 import Clients from "../components/Home/Clients.vue"
@@ -28,8 +28,8 @@ import Contact from "../components/Contact.vue"
 export default {
     components: {
         Landing,
-        LandingNavbar,
-        // NeoNav,
+        // LandingNavbar,
+        NeoNav,
         Services,
         About,
         Clients,

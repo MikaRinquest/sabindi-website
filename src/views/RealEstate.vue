@@ -1,7 +1,7 @@
 <template >
     <RealEstateNavbar />
     <WeTrade />
-    <Listings />
+    <!-- <Listings /> -->
     <Services />
     <wt-contact-layout id="r-contact">
         <iframe
@@ -13,7 +13,7 @@
 <script>
 import RealEstateNavbar from "../components/Real Estate/RealEstateNavbar.vue"
 import WeTrade from "../components/Real Estate/WeTrade.vue"
-import Listings from "../components/Real Estate/Listings.vue"
+// import Listings from "../components/Real Estate/Listings.vue"
 import Services from "../components/Real Estate/Services.vue"
 // import Contact from "../components/Real Estate/Contact.vue"
 export default {
@@ -21,7 +21,7 @@ export default {
         RealEstateNavbar,
         WeTrade,
         Services,
-        Listings,
+        // Listings,
         // Contact
     }
 }

@@ -12,26 +12,13 @@
                     exercitationem
                     in. Quasi saepe expedita praesentium aperiam odit ad fugiat necessitatibus! Suscipit deleniti
                     incidunt possimus, eos maiores labore?
-                    Placeat voluptate labore itaque quaerat omnis alias maxime consequatur enim iusto perferendis,
-                    vitae
-                    doloremque dignissimos harum voluptatem ea? Error impedit animi iusto maxime odio facilis vitae
-                    eius
-                    adipisci quasi fugit!
-                    Explicabo animi odit, facere ducimus sit molestiae a amet ipsam sint pariatur in, cumque quos
-                    minus
-                    id? Alias exercitationem, quis animi, totam necessitatibus distinctio dolore perferendis
-                    reiciendis,
-                    recusandae delectus nam.
-                    Repellendus ducimus repellat vel consequuntur deserunt. Alias rem id, architecto sequi illum
-                    libero
-                    possimus, nisi aspernatur, distinctio dolores tempore unde. Itaque neque placeat expedita quis
-                    reprehenderit harum rerum alias ducimus!</p>
+                </p>
                 <router-link to="About">
                     <h3 class="learn-more">Learn more about Sabindi.</h3>
                 </router-link>
             </div>
-            <div class="a-img"><img src="https://i.postimg.cc/L6ZQTfvd/Polish-20221104-112247759.png" alt=""
-                    class="abdul"></div>
+            <div class="a-img" data-aos="fade-down-left"><img
+                    src="https://i.postimg.cc/L6ZQTfvd/Polish-20221104-112247759.png" alt="" class="abdul"></div>
         </div>
     </div>
 
@@ -115,4 +102,86 @@ export default {
 .abdul {
     height: 500px;
 }
+
+/* Galaxy fold */
+@media only screen and (max-width:300px) {
+    .content-holder {
+        height: 100vh;
+    }
+
+    .a-content {
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+
+    }
+
+    .about-title {
+        padding-bottom: 0px;
+        font-size: 2rem;
+    }
+
+    .about-s {
+        font-size: 15px;
+    }
+
+    .a-img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .abdul {
+        height: 200px;
+    }
+}
+
+/* Small phone */
+@media only screen and (min-width:300px) and (max-width:576px) {
+    .content-holder {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .a-content {
+        flex-direction: column;
+        align-items: center;
+        width: 85%;
+
+    }
+
+    .about-title {
+        padding-bottom: 0px;
+        font-size: 2rem;
+    }
+
+    .about-s {
+        width: 280px;
+        font-size: 15px;
+    }
+
+    .a-img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .abdul {
+        height: 200px;
+    }
+}
+
+/* Bigger Phones */
+@media only screen and (min-width:576px) {}
+
+/* Tablets */
+@media only screen and (min-width:768px) {}
+
+/* Laptops */
+@media only screen and (min-width:992px) {}
+
+/* Desktops */
+@media only screen and (min-width:1200px) {}
 </style>
