@@ -126,6 +126,7 @@ img+p {
 
 .learn-more {
     margin-bottom: 0;
+    color: black;
 }
 
 /* Small phones */

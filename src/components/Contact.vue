@@ -103,7 +103,7 @@
                             <div class="phone ">
                                 <div class="icon"><i class="bi bi-telephone-fill"></i></div>
                                 <div>
-                                    <a class="tag" href="https://wa.me/0817079992" target="_blank">
+                                    <a class="tag" href="https://wa.me/0876559555" target="_blank">
                                         <p class="text">087 655 9555</p>
                                     </a>
                                 </div>
@@ -150,7 +150,7 @@ export default {
 
 <style scoped>
 .card {
-    width: 70%;
+    width: 65% !important;
     box-shadow: 5px 5px 6px #afafaf,
         -5px -5px 6px #f1f1f1;
 }
@@ -194,6 +194,7 @@ export default {
 }
 
 /* Small phones */
+
 @media only screen and (max-width:576px) {
 
 
@@ -203,7 +204,7 @@ export default {
 
     .s-contact-holder {
         display: flex;
-        justify-content: center
+        justify-content: center;
     }
 
     .s-contact {
@@ -218,6 +219,7 @@ export default {
     .nav-link {
         font-size: 22px;
         font-weight: 700;
+        padding: 5px;
     }
 
 }

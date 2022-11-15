@@ -14,7 +14,7 @@ export default {
 <style>
 .section {
     /* height: 100%; */
-    padding-top: 5vh;
+    padding-top: 12vh;
     padding-bottom: 10px;
 }
 
