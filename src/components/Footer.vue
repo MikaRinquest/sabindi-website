@@ -1,10 +1,10 @@
 <template>
     <div id="footer" class="d-flex">
-        <div class="copyright col-6">
+        <div class="copyright col-md-6">
             <p>Copyright<i class="bi bi-c-circle px-1"> </i>2022 Sabindi Group Global</p>
             <p>All Rights Reserved</p>
         </div>
-        <div class="socials col-6">
+        <div class="socials col-md-6">
             <p class="f-social">Follow Sabindi on Social Media</p>
             <a href="https://www.instagram.com/sabindisocials/" target="_blank"><i class="bi bi-instagram"></i></a>
             <a href="https://www.facebook.com/profile.php?id=100064313490282" target="_blank"><i
@@ -25,7 +25,7 @@ export default {
 
 <style scoped>
 #footer {
-    height: 10vh;
+    min-height: 10vh;
 }
 
 .copyright {
@@ -71,23 +71,59 @@ export default {
 }
 
 @media only screen and (max-width:510px) {
+    #footer {
+        flex-direction: column;
+    }
+
     .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         font-size: 15px;
-        padding-left: 0;
+        padding: 0;
     }
 
     .socials {
+        text-align: center;
+        margin-bottom: 5px;
         padding-right: 0;
     }
 
     .f-social {
         font-size: 15px;
-        font-weight: 500;
     }
 
     .bi {
-        font-size: 14px;
-        padding-right: 10px;
+        font-size: 15px;
     }
+}
+
+@media only screen and (min-width:300px) and (max-width:767px) {
+    #footer {
+        flex-direction: column;
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .socials {
+        text-align: center;
+        margin-bottom: 5px;
+        padding: 0;
+    }
+
+    .f-social {
+        font-size: 20px;
+    }
+
+    .bi {
+        font-size: 20px;
+    }
+
 }
 </style>

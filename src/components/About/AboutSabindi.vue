@@ -4,7 +4,7 @@
             <Slide v-for="slide in slides" :key="slide">
                 <div class="carousel__item">
                     <h2>{{ slide.title }}</h2>
-                    <p>{{ slide.text }}</p>
+                    <p class="s-text">{{ slide.text }}</p>
                 </div>
             </Slide>
 
@@ -37,22 +37,22 @@ export default {
             {
                 id: "1",
                 title: "About Sabindi",
-                text: "lorem ipsem",
+                text: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
             },
             {
                 id: "2",
                 title: "Our Mission",
-                text: "lorem ipsum",
+                text: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
             },
             {
                 id: "3",
                 title: "Our Vision",
-                text: "lorem ipsum",
+                text: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
             },
             {
                 id: "4",
                 title: "Our Values",
-                text: "lorem ipsum",
+                text: "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum",
             },
         ],
         // breakpoints are mobile first
@@ -74,5 +74,23 @@ export default {
 </script>
 
 <style scoped>
+/* Small phones */
+@media only screen and (max-width:576px) {
+    .s-text {
+        width: 200px;
+        word-break: break-all;
+    }
+}
 
+/* Bigger Phones */
+@media only screen and (min-width:576px) {}
+
+/* Tablets */
+@media only screen and (min-width:768px) {}
+
+/* Laptops */
+@media only screen and (min-width:992px) {}
+
+/* Desktops */
+@media only screen and (min-width:1200px) {}
 </style>

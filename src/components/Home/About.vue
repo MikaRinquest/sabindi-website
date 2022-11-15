@@ -17,8 +17,8 @@
                     <h3 class="learn-more">Learn more about Sabindi.</h3>
                 </router-link>
             </div>
-            <div class="a-img" data-aos="fade-down-left"><img
-                    src="https://i.postimg.cc/L6ZQTfvd/Polish-20221104-112247759.png" alt="" class="abdul"></div>
+            <div class="a-img"><img src="https://i.postimg.cc/L6ZQTfvd/Polish-20221104-112247759.png" alt=""
+                    class="abdul"></div>
         </div>
     </div>
 
@@ -79,6 +79,7 @@ export default {
     color: white;
     text-shadow: 2px 2px 4px #000000;
     position: relative;
+    text-align: center;
 }
 
 .learn-more {
@@ -157,8 +158,8 @@ export default {
     }
 
     .about-s {
-        width: 280px;
-        font-size: 15px;
+        width: 300px;
+        font-size: 17px;
     }
 
     .a-img {
@@ -169,7 +170,7 @@ export default {
     }
 
     .abdul {
-        height: 200px;
+        height: 300px;
     }
 }
 

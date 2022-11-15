@@ -37,7 +37,7 @@ export default {
 }
 
 .img {
-    width: 90%;
+    width: 95%;
     border: 1px solid black;
     transition: 0.3s;
     height: 250px;
@@ -62,13 +62,34 @@ export default {
     }
 
     .img {
-        height: 95%
+        height: 95%;
+    }
+
+    .img:hover {
+        width: 100%;
+        height: 100%;
     }
 
 }
 
-/* Bigger Phones */
-@media only screen and (min-width:576px) {}
+@media only screen and (min-width:370px) and (max-width:530px) {
+
+    .contain {
+        height: 90vh;
+    }
+}
+
+@media only screen and (min-width:530px) {
+    .contain {
+        height: 85vh;
+    }
+}
+
+@media only screen and (min-width:390px) {
+    .contain {
+        height: 70vh;
+    }
+}
 
 /* Tablets */
 @media only screen and (min-width:768px) {}

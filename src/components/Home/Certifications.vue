@@ -121,9 +121,9 @@ export default {
     width: 400px;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1200px) {
     .c-img {
-        width: 250px;
+        width: 300px;
     }
 }
 </style>

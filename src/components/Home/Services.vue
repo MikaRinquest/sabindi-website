@@ -140,7 +140,7 @@ img+p {
     }
 
     .maintenance {
-        padding-bottom: 15px;
+        padding-bottom: 25px;
     }
 
     .text-center {
@@ -166,7 +166,11 @@ img+p {
 
 
 /* Bigger Phones */
-@media only screen and (min-width:576px) {}
+@media only screen and (min-width:390px) {
+    img+p {
+        font-size: 23px;
+    }
+}
 
 /* Tablets */
 @media only screen and (min-width:768px) {}

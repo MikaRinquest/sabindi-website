@@ -21,4 +21,27 @@ export default {
 .branch {
     width: 45%;
 }
+
+/* Small phones */
+@media only screen and (max-width:576px) {
+    .branch {
+        width: 95%;
+    }
+
+    .italics {
+        text-align: center;
+    }
+}
+
+/* Bigger Phones */
+@media only screen and (min-width:576px) {}
+
+/* Tablets */
+@media only screen and (min-width:768px) {}
+
+/* Laptops */
+@media only screen and (min-width:992px) {}
+
+/* Desktops */
+@media only screen and (min-width:1200px) {}
 </style>
