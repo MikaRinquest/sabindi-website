@@ -26,7 +26,7 @@
                         <div class="phone ">
                             <div class="icon"><i class="bi bi-telephone-fill"></i></div>
                             <div>
-                                <a class="tag" href="https://wa.me/0876559555" target="_blank">
+                                <a class="tag" href="tel:0876559555" target="_blank">
                                     <p class="text">087 655 9555</p>
                                 </a>
                             </div>
@@ -39,19 +39,25 @@
                         <div class="address ">
                             <div class="icon"><i class="bi bi-map-fill"></i></div>
                             <div>
-                                <p class="text">Valhalla, Centurion</p>
+                                <a class="tag" href="https://goo.gl/maps/HhKwKTBNfeX7Saak8" target="_blank">
+                                    <p class="text">Valhalla, Centurion</p>
+                                </a>
                             </div>
                         </div>
                         <div class="email ">
                             <div class="icon"><i class="bi bi-envelope"></i></div>
                             <div>
+                                <!-- <a class="tag"> -->
                                 <p class="text">info@sabindi.co.za</p>
+                                <!-- </a> -->
                             </div>
                         </div>
                         <div class="phone ">
                             <div class="icon"><i class="bi bi-telephone-fill"></i></div>
                             <div>
+                                <!-- <a class="tag"> -->
                                 <p class="text">111 222 3333</p>
+                                <!-- </a> -->
                             </div>
                         </div>
                     </div>
@@ -103,7 +109,7 @@
                             <div class="phone ">
                                 <div class="icon"><i class="bi bi-telephone-fill"></i></div>
                                 <div>
-                                    <a class="tag" href="https://wa.me/0876559555" target="_blank">
+                                    <a class="tag" href="tel:0876559555" target="_blank">
                                         <p class="text">087 655 9555</p>
                                     </a>
                                 </div>
@@ -119,19 +125,25 @@
                             <div class="address ">
                                 <div class="icon"><i class="bi bi-map-fill"></i></div>
                                 <div>
-                                    <p class="text">Valhalla, Centurion</p>
+                                    <a class="tag" href="https://goo.gl/maps/HhKwKTBNfeX7Saak8" target="_blank">
+                                        <p class="text">Valhalla, Centurion</p>
+                                    </a>
                                 </div>
                             </div>
                             <div class="email ">
                                 <div class="icon"><i class="bi bi-envelope"></i></div>
                                 <div>
+                                    <!-- <a class="tag"> -->
                                     <p class="text">info@sabindi.co.za</p>
+                                    <!-- </a> -->
                                 </div>
                             </div>
                             <div class="phone ">
                                 <div class="icon"><i class="bi bi-telephone-fill"></i></div>
                                 <div>
+                                    <!-- <a class="tag"> -->
                                     <p class="text">111 222 3333</p>
+                                    <!-- </a> -->
                                 </div>
                             </div>
                         </div>

@@ -26,6 +26,7 @@ export default {
 <style scoped>
 #footer {
     min-height: 10vh;
+    margin-top: 15px;
 }
 
 .copyright {

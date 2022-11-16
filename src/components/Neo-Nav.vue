@@ -3,7 +3,7 @@
         <div class="img-hold col-3">
             <img src="../assets/image857.png" alt="Company Logo" class="logo">
         </div>
-        <div class="col-8">
+        <div class="col-9">
             <ul class="list-holder">
                 <router-link to="/" class="nav-link">
                     <li class="list-item">Home</li>
@@ -32,8 +32,8 @@
         </div>
     </nav>
 
-    <button class="nav-button" @click="openNav"><i class="bi bi-list"></i></button>
-    <Transition name="slide">
+    <button class="nav-button" @click="toggle = !toggle"><i class="bi bi-list"></i></button>
+    <Transition name="fade">
         <nav id="r-nav" v-if="toggle">
             <!-- <button class="nav-button" @click="openNav"><i class="bi bi-list"></i></button> -->
             <!-- <div class="img-hold ">
@@ -86,11 +86,6 @@ export default {
         close() {
             this.active = false;
         },
-
-        openNav() {
-            this.toggle = !this.toggle;
-            console.log("You clicked me");
-        }
     }
 }
 </script>
@@ -109,6 +104,7 @@ export default {
     list-style-type: none;
     padding: 15px;
     font-size: 25px;
+    color: white;
 }
 
 .list-item:hover {
@@ -136,11 +132,12 @@ export default {
 }
 
 #r-nav {
-
     position: fixed;
-    background-color: lightgrey;
+    background-color: var(--sabindi);
     z-index: 5;
     width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-in;
 }
 
 .r-list-holder {
@@ -154,8 +151,15 @@ export default {
     background-color: transparent;
 }
 
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 2s ease-in-out;
+}
 
-
+.fade-enter-from,
+.fade-leave-to {
+    transform: translateX(100vw);
+}
 
 @media only screen and (max-width:576px) {
     #nav {

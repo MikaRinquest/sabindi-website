@@ -79,15 +79,16 @@ export default {
     }
 }
 
-@media only screen and (min-width:530px) {
-    .contain {
-        height: 85vh;
-    }
-}
-
 @media only screen and (min-width:390px) {
     .contain {
         height: 70vh;
+    }
+}
+
+
+@media only screen and (min-width:530px) {
+    .contain {
+        height: 85vh;
     }
 }
 

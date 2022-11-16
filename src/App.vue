@@ -1,17 +1,13 @@
 <template>
+  <navbar></navbar>
   <router-view></router-view>
-
-  <Footer />
+  <bottom></bottom>
 </template>
 
 <script>
-import Footer from "./components/Footer.vue"
 import AOS from 'aos'
 
 export default {
-  components: {
-    Footer,
-  },
   created() {
     AOS.init()
   }

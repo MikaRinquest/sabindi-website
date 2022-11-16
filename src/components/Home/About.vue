@@ -17,8 +17,12 @@
                     <h3 class="learn-more">Learn more about Sabindi.</h3>
                 </router-link>
             </div>
-            <div class="a-img"><img src="https://i.postimg.cc/L6ZQTfvd/Polish-20221104-112247759.png" alt=""
-                    class="abdul"></div>
+            <!-- <transition appear @before-enter="beforeEnter" @enter="enter" @after-enter="afterEnter"> -->
+            <div class="a-img">
+                <img src="https://i.postimg.cc/g0vk2z0H/Polish-20221116-085835626.png" alt="Image of Abdul"
+                    class="abdul">
+            </div>
+            <!-- </transition> -->
         </div>
     </div>
 
@@ -26,8 +30,37 @@
 
 <script>
 import BaseLayout from '../BaseLayout.vue'
+// import gsap from 'gsap'
 export default {
     components: { BaseLayout },
+
+    // setup() {
+    //     const beforeEnter = (el) => {
+    //         console.log("before enter - set initial state")
+    //         el.style.transform = 'translateX(-60px)'
+    //         el.style.opacity = 0
+    //     }
+
+    //     const enter = (el, done) => {
+    //         console.log('starting to enter - make transition')
+    //         gsap.to(el, {
+    //             scrollTrigger: {
+    //                 duration: 3,
+    //                 x: 0,
+    //                 opacity: 1,
+    //                 ease: 'bounce.out', //Built in with gsap
+    //                 onComplete: done, //This makes it so that the next step will only run AFTER this step is complete
+    //                 // Creates an animation saying where the object must come from and how long it will take. Using gsap for this
+    //             }
+    //         })
+    //     }
+
+    //     const afterEnter = (el) => {
+    //         console.log("after entering")
+    //     }
+
+    //     return { beforeEnter, enter, afterEnter, }
+    // }
 
 }
 </script>
@@ -100,9 +133,10 @@ export default {
     margin-left: 5%;
 }
 
-.abdul {
+
+/* .abdul {
     height: 500px;
-}
+} */
 
 /* Galaxy fold */
 @media only screen and (max-width:300px) {

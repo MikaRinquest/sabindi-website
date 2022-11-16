@@ -88,7 +88,7 @@ export default {
 
 .quote1,
 .quote2 {
-    width: 5%;
+    width: 3%;
 }
 
 .carousel-control-next {
@@ -109,7 +109,11 @@ export default {
 }
 
 /* Tablets */
-@media only screen and (min-width:768px) {}
+@media only screen and (min-width:992px) {
+    .testimonial {
+        font-size: 20px;
+    }
+}
 
 /* Desktops */
 @media only screen and (min-width:1200px) {}

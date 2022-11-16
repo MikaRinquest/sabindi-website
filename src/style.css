@@ -112,7 +112,7 @@ ul{
 }
 /* GLOBAL WEBSITE FUNCTIONS */
 #nav{
-  background-color:lightgray;
+  background-color:#683B21;
   opacity:0.9;
   z-index:5;
   position: fixed !important;
